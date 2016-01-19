@@ -1,18 +1,3 @@
-$("#btn-login").click(function(e) {
-  e.preventDefault();
-  var name = $("#user_name").val(); 
-  var user_email = $("#user_email").val();
-  var password = $("#password").val();
-  var dataString = 'user_name='+name+'&user_email='+user_email+'&password='+password;
-  $.ajax({
-    type:'POST',
-    data:dataString,
-    url:'reginfo.php',
-    success:function(data) {
-      alert(data);
-    }
-  });
-});
 
 /*$("#btn-login").click(function(){
   var data =  $("#login-form :input").serializeArray();
